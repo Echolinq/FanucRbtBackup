@@ -8,13 +8,13 @@ To run the backup command, use the following syntax:
 
 `FanucRbtBackup.exe <Hostname> [DestinationDirectory] [-f|--filter]`
   
-- `<Hostname>`: The hostname or IPv4 address of the Fanuc robot.
+- `<Hostname>`: The hostname or IPv4 address of the robot.
 - `[DestinationDirectory]` (optional): The destination folder for the robot backup. If not provided, the current working directory will be used.
 - `-f|--filter` (optional): Specifies a file extension filter for the backup. Only files with the specified extension will be backed up.
 
 ## Example
 
- `FanucRbtBackup.exe 192.168.0.10 C:\RobotBackup -f .txt` 
+ `FanucRbtBackup.exe 192.168.0.10 C:\RobotBackup -f .ls` 
   
 In the above example, the tool will connect to the Fanuc robot at IP address 192.168.0.10 and backup all files with the .txt extension to the "C:\RobotBackup" directory.
 

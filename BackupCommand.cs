@@ -15,12 +15,12 @@ public class BackupCommand : Command<BackupCommand.Settings>
         [CommandArgument(0, "<Hostname>")]
         public string Hostname { get; init; }
 
-        [Description("Destination folder for robot backup. default is current working directory")]
+        [Description("The destination folder for the robot backup. If not provided, the current working directory will be used.")]
         [CommandArgument(0, "[Hostname]")]
         [DefaultValue("")]
         public string DestinationDirectory { get; init; }
 
-        [Description("Only take backup of files with specific extension")]
+        [Description("Specifies a file extension filter for the backup. Only files with the specified extension will be backed up")]
         [CommandOption("-f|--filter")]
         [DefaultValue("")]
         public string fileExtension { get; init; }
