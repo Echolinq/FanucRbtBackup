@@ -5,7 +5,7 @@ using Spectre.Console.Cli;
 using FluentFTP;
 using FluentFTP.Rules;
 
-namespace FanucCLI;
+namespace FanucRbtBackup;
 
 public class BackupCommand : Command<BackupCommand.Settings>
 {

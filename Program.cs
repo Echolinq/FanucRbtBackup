@@ -1,6 +1,6 @@
 ﻿using Spectre.Console.Cli;
 
-namespace FanucCLI;
+namespace FanucRbtBackup;
 
 public static class Program
 {

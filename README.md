@@ -6,7 +6,7 @@ This is a command-line tool for backing up files from a Fanuc robot. It uses the
 
 To run the backup command, use the following syntax:
 
-`FanucCLI.exe <Hostname> [DestinationDirectory] [-f|--filter]`
+`FanucRbtBackup.exe <Hostname> [DestinationDirectory] [-f|--filter]`
   
 - `<Hostname>`: The hostname or IPv4 address of the Fanuc robot.
 - `[DestinationDirectory]` (optional): The destination folder for the robot backup. If not provided, the current working directory will be used.
@@ -14,7 +14,7 @@ To run the backup command, use the following syntax:
 
 ## Example
 
- `FanucCLI.exe 192.168.0.10 C:\RobotBackup -f .txt` 
+ `FanucRbtBackup.exe 192.168.0.10 C:\RobotBackup -f .txt` 
   
 In the above example, the tool will connect to the Fanuc robot at IP address 192.168.0.10 and backup all files with the .txt extension to the "C:\RobotBackup" directory.
 
@@ -25,6 +25,20 @@ During the backup process, a progress bar will be displayed using the `Spectre.C
 ## Validation
 
 The tool validates the provided destination directory before starting the backup process. If the directory does not exist, an error message will be displayed.
+
+## Building from Source
+
+To build the Fanuc Robot Backup Tool from source, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/Echolinq/FanucRbtBackup.git`
+2. Navigate to the project directory: `cd FanucRbtBackup`
+3. Build the project: `dotnet build`
+
+Make sure you have the .NET Core SDK installed on your machine.
+
+## Downloading Releases
+
+You can also download pre-built releases of the Fanuc Robot Backup Tool from the [Releases](https://github.com/Echolinq/FanucRbtBackup/releases) section of the GitHub repository. Select the desired release and download the appropriate executable file for your platform.
 
 ## Dependencies
 
@@ -38,5 +52,3 @@ Make sure these libraries are included in the project and referenced properly.
 ## License
 
 This code is provided under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and use it according to your needs.
-
-
