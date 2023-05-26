@@ -36,10 +36,6 @@ To build the Fanuc Robot Backup Tool from source, follow these steps:
 
 Make sure you have the .NET Core SDK installed on your machine.
 
-## Downloading Releases
-
-You can also download pre-built releases of the Fanuc Robot Backup Tool from the [Releases](https://github.com/Echolinq/FanucRbtBackup/releases) section of the GitHub repository. Select the desired release and download the appropriate executable file for your platform.
-
 ## Dependencies
 
 The tool depends on the following libraries:
