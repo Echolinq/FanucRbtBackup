@@ -16,7 +16,7 @@ public class BackupCommand : Command<BackupCommand.Settings>
         public string Hostname { get; init; }
 
         [Description("The destination folder for the robot backup. If not provided, the current working directory will be used.")]
-        [CommandArgument(0, "[Hostname]")]
+        [CommandArgument(1, "[dest]")]
         [DefaultValue("")]
         public string DestinationDirectory { get; init; }
 
